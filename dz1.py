@@ -1,13 +1,17 @@
-a = 15 * 3
-b = 15 / 3
-c = 15 // 2
-d = 15 ** 2
-print(type(a))
-print(type(b))
-print(type(c))
-print(type(d))
+def num_translate(eng):
+    nums = {'zero': 'ноль',
+            'one': 'один',
+            'two': 'два',
+            'three': 'три',
+            'four': 'четыре',
+            'five': 'пять',
+            'six': 'шесть',
+            'seven': 'семь',
+            'eight': 'восемь',
+            'nine': 'девять',
+            'ten': 'десять'}
+    return nums.get(eng)
 
-print(type(15 * 3))
-print(type(15 / 3))
-print(type(15 // 2))
-print(type(15 ** 2))
+
+print(num_translate('one'))
+print(num_translate(input('Input an English number: ')))
