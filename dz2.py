@@ -1,11 +1,8 @@
 import requests
 
 
-def currency_rates(val: object) -> object:
-    """
+def currency_rates(val):
 
-    :rtype: object
-    """
     site = requests.get('https://cbr.ru/scripts/XML_daily.asp')
     content = site.content.decode(encoding=site.encoding)
     result = None
