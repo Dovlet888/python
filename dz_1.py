@@ -7,3 +7,4 @@ paths = [os.path.join(project_name, 'settings'), os.path.join(project_name, 'mai
 for _path in paths:
     os.makedirs(os.path.join(ROOT, _path), exist_ok=True)
 
+    
